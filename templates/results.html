@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 100px;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .top-left-brand {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e50914; /* Red */
+            background-color: #000000; /* Black background */
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .results-container {
+            background-color: #f9f9f9;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+
+        .query-text {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #e50914;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 14px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left-brand">Vim<span class="white-text">Search</span></div>
+
+    <div class="results-container">
+        <h1>Results for: <span class="query-text">"{{ query }}"</span></h1>
+        <p>This is where your search results would appear.</p>
+        <a href="/">Back to Search</a>
+    </div>
+
+    <footer>© 2025 Honor Zinc</footer>
+</body>
+</html>
